@@ -1,107 +1,1094 @@
 [
     {
-        "year": "AD",
-        "hot dog": 55,
-        "hot dogColor": "hsl(314, 70%, 50%)",
-        "burger": 112,
-        "burgerColor": "hsl(58, 70%, 50%)",
-        "sandwich": 189,
-        "sandwichColor": "hsl(233, 70%, 50%)",
-        "kebab": 9,
-        "kebabColor": "hsl(34, 70%, 50%)",
-        "fries": 32,
-        "friesColor": "hsl(172, 70%, 50%)",
-        "donut": 94,
-        "donutColor": "hsl(293, 70%, 50%)"
+    "id": "id0.0",
+    "group": "group B",
+    "price": 194,
+    "volume": 13
+},
+{
+    "id": "id0.1",
+    "group": "group A",
+    "price": 420,
+    "volume": 4
+},
+{
+    "id": "id0.2",
+    "group": "group C",
+    "price": 225,
+    "volume": 12
+},
+{
+    "id": "id0.3",
+    "group": "group B",
+    "price": 453,
+    "volume": 10
+},
+{
+    "id": "id0.4",
+    "group": "group C",
+    "price": 120,
+    "volume": 9
+},
+{
+    "id": "id0.5",
+    "group": "group C",
+    "price": 170,
+    "volume": 18
+},
+{
+    "id": "id0.6",
+    "group": "group A",
+    "price": 307,
+    "volume": 19
+},
+{
+    "id": "id0.7",
+    "group": "group A",
+    "price": 21,
+    "volume": 9
+},
+{
+    "id": "id0.8",
+    "group": "group A",
+    "price": 176,
+    "volume": 5
+},
+{
+    "id": "id0.9",
+    "group": "group A",
+    "price": 267,
+    "volume": 20
+},
+{
+    "id": "id0.10",
+    "group": "group B",
+    "price": 164,
+    "volume": 10
+},
+{
+    "id": "id0.11",
+    "group": "group A",
+    "price": 405,
+    "volume": 14
+},
+{
+    "id": "id0.12",
+    "group": "group A",
+    "price": 387,
+    "volume": 18
+},
+{
+    "id": "id0.13",
+    "group": "group A",
+    "price": 392,
+    "volume": 14
+},
+{
+    "id": "id0.14",
+    "group": "group C",
+    "price": 77,
+    "volume": 12
+},
+{
+    "id": "id0.15",
+    "group": "group B",
+    "price": 395,
+    "volume": 14
+},
+{
+    "id": "id0.16",
+    "group": "group C",
+    "price": 121,
+    "volume": 14
+},
+{
+    "id": "id0.17",
+    "group": "group A",
+    "price": 166,
+    "volume": 7
+},
+{
+    "id": "id0.18",
+    "group": "group A",
+    "price": 157,
+    "volume": 18
+},
+{
+    "id": "id0.19",
+    "group": "group C",
+    "price": 66,
+    "volume": 15
+},
+{
+    "id": "id0.20",
+    "group": "group A",
+    "price": 365,
+    "volume": 20
+},
+{
+    "id": "id0.21",
+    "group": "group B",
+    "price": 147,
+    "volume": 19
+},
+{
+    "id": "id0.22",
+    "group": "group A",
+    "price": 6,
+    "volume": 10
+},
+{
+    "id": "id0.23",
+    "group": "group C",
+    "price": 94,
+    "volume": 9
+},
+{
+    "id": "id0.24",
+    "group": "group C",
+    "price": 317,
+    "volume": 6
+},
+{
+    "id": "id0.25",
+    "group": "group C",
+    "price": 236,
+    "volume": 5
+},
+{
+    "id": "id0.26",
+    "group": "group C",
+    "price": 160,
+    "volume": 7
+},
+{
+    "id": "id0.27",
+    "group": "group B",
+    "price": 173,
+    "volume": 15
+},
+{
+    "id": "id0.28",
+    "group": "group B",
+    "price": 194,
+    "volume": 11
+},
+{
+    "id": "id0.29",
+    "group": "group A",
+    "price": 480,
+    "volume": 20
+},
+{
+    "id": "id0.30",
+    "group": "group C",
+    "price": 273,
+    "volume": 19
+},
+{
+    "id": "id0.31",
+    "group": "group B",
+    "price": 115,
+    "volume": 10
+},
+{
+    "id": "id0.32",
+    "group": "group B",
+    "price": 380,
+    "volume": 20
+},
+{
+    "id": "id0.33",
+    "group": "group C",
+    "price": 249,
+    "volume": 12
+},
+{
+    "id": "id0.34",
+    "group": "group C",
+    "price": 193,
+    "volume": 15
+},
+{
+    "id": "id0.35",
+    "group": "group C",
+    "price": 337,
+    "volume": 20
+},
+{
+    "id": "id0.36",
+    "group": "group B",
+    "price": 467,
+    "volume": 11
+},
+{
+    "id": "id0.37",
+    "group": "group A",
+    "price": 59,
+    "volume": 17
+},
+{
+    "id": "id0.38",
+    "group": "group C",
+    "price": 301,
+    "volume": 5
+},
+{
+    "id": "id0.39",
+    "group": "group A",
+    "price": 315,
+    "volume": 10
+},
+{
+    "id": "id0.40",
+    "group": "group C",
+    "price": 40,
+    "volume": 18
+},
+{
+    "id": "id0.41",
+    "group": "group A",
+    "price": 290,
+    "volume": 9
+},
+{
+    "id": "id0.42",
+    "group": "group A",
+    "price": 42,
+    "volume": 9
+},
+{
+    "id": "id0.43",
+    "group": "group B",
+    "price": 119,
+    "volume": 17
+},
+{
+    "id": "id0.44",
+    "group": "group B",
+    "price": 6,
+    "volume": 20
+},
+{
+    "id": "id0.45",
+    "group": "group B",
+    "price": 288,
+    "volume": 10
+},
+{
+    "id": "id0.46",
+    "group": "group C",
+    "price": 493,
+    "volume": 12
+},
+{
+    "id": "id0.47",
+    "group": "group C",
+    "price": 213,
+    "volume": 16
+},
+{
+    "id": "id0.48",
+    "group": "group A",
+    "price": 471,
+    "volume": 13
+},
+{
+    "id": "id0.49",
+    "group": "group B",
+    "price": 498,
+    "volume": 8
+},
+{
+    "id": "id0.50",
+    "group": "group B",
+    "price": 7,
+    "volume": 13
+},
+{
+    "id": "id0.51",
+    "group": "group B",
+    "price": 62,
+    "volume": 20
+},
+{
+    "id": "id0.52",
+    "group": "group A",
+    "price": 426,
+    "volume": 5
+},
+{
+    "id": "id0.53",
+    "group": "group A",
+    "price": 206,
+    "volume": 18
+},
+{
+    "id": "id0.54",
+    "group": "group A",
+    "price": 203,
+    "volume": 17
+},
+{
+    "id": "id0.55",
+    "group": "group C",
+    "price": 243,
+    "volume": 4
+},
+{
+    "id": "id1.0",
+    "group": "group B",
+    "price": 477,
+    "volume": 17
+},
+{
+    "id": "id1.1",
+    "group": "group C",
+    "price": 204,
+    "volume": 17
+},
+{
+    "id": "id1.2",
+    "group": "group A",
+    "price": 310,
+    "volume": 16
+},
+{
+    "id": "id1.3",
+    "group": "group A",
+    "price": 73,
+    "volume": 8
+},
+{
+    "id": "id1.4",
+    "group": "group C",
+    "price": 262,
+    "volume": 8
+},
+{
+    "id": "id1.5",
+    "group": "group C",
+    "price": 289,
+    "volume": 13
+},
+{
+    "id": "id1.6",
+    "group": "group A",
+    "price": 426,
+    "volume": 20
+},
+{
+    "id": "id1.7",
+    "group": "group A",
+    "price": 228,
+    "volume": 8
+},
+{
+    "id": "id1.8",
+    "group": "group B",
+    "price": 242,
+    "volume": 15
+},
+{
+    "id": "id1.9",
+    "group": "group A",
+    "price": 352,
+    "volume": 12
+},
+{
+    "id": "id1.10",
+    "group": "group B",
+    "price": 340,
+    "volume": 13
+},
+{
+    "id": "id1.11",
+    "group": "group B",
+    "price": 334,
+    "volume": 5
+},
+{
+    "id": "id1.12",
+    "group": "group B",
+    "price": 65,
+    "volume": 12
+},
+{
+    "id": "id1.13",
+    "group": "group A",
+    "price": 432,
+    "volume": 10
+},
+{
+    "id": "id1.14",
+    "group": "group A",
+    "price": 452,
+    "volume": 8
+},
+{
+    "id": "id1.15",
+    "group": "group B",
+    "price": 94,
+    "volume": 16
+},
+{
+    "id": "id1.16",
+    "group": "group A",
+    "price": 112,
+    "volume": 15
+},
+{
+    "id": "id1.17",
+    "group": "group C",
+    "price": 17,
+    "volume": 4
+},
+{
+    "id": "id1.18",
+    "group": "group A",
+    "price": 210,
+    "volume": 5
+},
+{
+    "id": "id1.19",
+    "group": "group B",
+    "price": 166,
+    "volume": 15
+},
+{
+    "id": "id1.20",
+    "group": "group A",
+    "price": 294,
+    "volume": 12
+},
+{
+    "id": "id1.21",
+    "group": "group C",
+    "price": 395,
+    "volume": 13
+},
+{
+    "id": "id1.22",
+    "group": "group C",
+    "price": 215,
+    "volume": 6
+},
+{
+    "id": "id1.23",
+    "group": "group C",
+    "price": 451,
+    "volume": 12
+},
+{
+    "id": "id1.24",
+    "group": "group B",
+    "price": 406,
+    "volume": 5
+},
+{
+    "id": "id1.25",
+    "group": "group B",
+    "price": 130,
+    "volume": 8
+},
+{
+    "id": "id1.26",
+    "group": "group A",
+    "price": 80,
+    "volume": 19
+},
+{
+    "id": "id1.27",
+    "group": "group B",
+    "price": 386,
+    "volume": 14
+},
+{
+    "id": "id1.28",
+    "group": "group B",
+    "price": 32,
+    "volume": 8
+},
+{
+    "id": "id1.29",
+    "group": "group A",
+    "price": 299,
+    "volume": 17
+},
+{
+    "id": "id1.30",
+    "group": "group B",
+    "price": 285,
+    "volume": 20
+},
+{
+    "id": "id1.31",
+    "group": "group C",
+    "price": 316,
+    "volume": 4
+},
+{
+    "id": "id1.32",
+    "group": "group A",
+    "price": 26,
+    "volume": 13
+},
+{
+    "id": "id1.33",
+    "group": "group B",
+    "price": 105,
+    "volume": 8
+},
+{
+    "id": "id1.34",
+    "group": "group C",
+    "price": 475,
+    "volume": 17
+},
+{
+    "id": "id1.35",
+    "group": "group A",
+    "price": 86,
+    "volume": 5
+},
+{
+    "id": "id1.36",
+    "group": "group A",
+    "price": 5,
+    "volume": 10
+},
+{
+    "id": "id1.37",
+    "group": "group B",
+    "price": 248,
+    "volume": 14
+},
+{
+    "id": "id1.38",
+    "group": "group A",
+    "price": 401,
+    "volume": 5
+},
+{
+    "id": "id1.39",
+    "group": "group C",
+    "price": 450,
+    "volume": 16
+},
+{
+    "id": "id1.40",
+    "group": "group A",
+    "price": 24,
+    "volume": 7
+},
+{
+    "id": "id1.41",
+    "group": "group B",
+    "price": 237,
+    "volume": 17
+},
+{
+    "id": "id1.42",
+    "group": "group C",
+    "price": 38,
+    "volume": 8
+},
+{
+    "id": "id1.43",
+    "group": "group C",
+    "price": 200,
+    "volume": 19
+},
+{
+    "id": "id1.44",
+    "group": "group C",
+    "price": 165,
+    "volume": 18
+},
+{
+    "id": "id1.45",
+    "group": "group C",
+    "price": 353,
+    "volume": 13
+},
+{
+    "id": "id1.46",
+    "group": "group C",
+    "price": 52,
+    "volume": 18
+},
+{
+    "id": "id1.47",
+    "group": "group B",
+    "price": 349,
+    "volume": 5
+},
+{
+    "id": "id1.48",
+    "group": "group B",
+    "price": 312,
+    "volume": 8
+},
+{
+    "id": "id1.49",
+    "group": "group B",
+    "price": 92,
+    "volume": 4
+},
+{
+    "id": "id1.50",
+    "group": "group A",
+    "price": 84,
+    "volume": 18
+},
+{
+    "id": "id1.51",
+    "group": "group C",
+    "price": 89,
+    "volume": 19
+},
+{
+    "id": "id1.52",
+    "group": "group A",
+    "price": 145,
+    "volume": 14
+},
+{
+    "id": "id1.53",
+    "group": "group B",
+    "price": 288,
+    "volume": 4
+},
+{
+    "id": "id1.54",
+    "group": "group C",
+    "price": 74,
+    "volume": 19
+},
+{
+    "id": "id1.55",
+    "group": "group B",
+    "price": 65,
+    "volume": 17
+},
+{
+    "id": "id1.56",
+    "group": "group B",
+    "price": 155,
+    "volume": 4
+},
+{
+    "id": "id1.57",
+    "group": "group A",
+    "price": 443,
+    "volume": 17
+},
+{
+    "id": "id1.58",
+    "group": "group B",
+    "price": 346,
+    "volume": 20
+},
+{
+    "id": "id1.59",
+    "group": "group B",
+    "price": 345,
+    "volume": 15
+},
+{
+    "id": "id1.60",
+    "group": "group B",
+    "price": 275,
+    "volume": 10
+},
+{
+    "id": "id1.61",
+    "group": "group C",
+    "price": 27,
+    "volume": 14
+},
+{
+    "id": "id1.62",
+    "group": "group C",
+    "price": 232,
+    "volume": 16
+},
+{
+    "id": "id1.63",
+    "group": "group A",
+    "price": 291,
+    "volume": 12
+},
+{
+    "id": "id1.64",
+    "group": "group B",
+    "price": 443,
+    "volume": 16
+},
+{
+    "id": "id1.65",
+    "group": "group C",
+    "price": 107,
+    "volume": 17
+},
+{
+    "id": "id1.66",
+    "group": "group B",
+    "price": 306,
+    "volume": 16
+},
+{
+    "id": "id1.67",
+    "group": "group C",
+    "price": 467,
+    "volume": 10
+},
+{
+    "id": "id1.68",
+    "group": "group C",
+    "price": 2,
+    "volume": 8
+},
+{
+    "id": "id1.69",
+    "group": "group A",
+    "price": 263,
+    "volume": 15
+},
+{
+    "id": "id1.70",
+    "group": "group B",
+    "price": 396,
+    "volume": 5
+},
+{
+    "id": "id1.71",
+    "group": "group C",
+    "price": 34,
+    "volume": 11
+},
+{
+    "id": "id2.0",
+    "group": "group C",
+    "price": 143,
+    "volume": 14
+},
+{
+    "id": "id2.1",
+    "group": "group A",
+    "price": 380,
+    "volume": 16
+},
+{
+    "id": "id2.2",
+    "group": "group C",
+    "price": 372,
+    "volume": 18
+},
+{
+    "id": "id2.3",
+    "group": "group A",
+    "price": 151,
+    "volume": 8
+},
+{
+    "id": "id2.4",
+    "group": "group C",
+    "price": 212,
+    "volume": 14
+},
+{
+    "id": "id2.5",
+    "group": "group B",
+    "price": 240,
+    "volume": 20
+},
+{
+    "id": "id2.6",
+    "group": "group A",
+    "price": 450,
+    "volume": 5
+},
+{
+    "id": "id2.7",
+    "group": "group A",
+    "price": 127,
+    "volume": 15
+},
+{
+    "id": "id2.8",
+    "group": "group A",
+    "price": 131,
+    "volume": 13
+},
+{
+    "id": "id2.9",
+    "group": "group B",
+    "price": 107,
+    "volume": 8
+},
+{
+    "id": "id2.10",
+    "group": "group B",
+    "price": 128,
+    "volume": 19
+},
+{
+    "id": "id2.11",
+    "group": "group C",
+    "price": 487,
+    "volume": 9
+},
+{
+    "id": "id2.12",
+    "group": "group B",
+    "price": 352,
+    "volume": 14
+},
+{
+    "id": "id2.13",
+    "group": "group C",
+    "price": 292,
+    "volume": 12
+},
+{
+    "id": "id2.14",
+    "group": "group C",
+    "price": 143,
+    "volume": 7
+},
+{
+    "id": "id2.15",
+    "group": "group B",
+    "price": 241,
+    "volume": 6
+},
+{
+    "id": "id2.16",
+    "group": "group A",
+    "price": 339,
+    "volume": 14
+},
+{
+    "id": "id2.17",
+    "group": "group C",
+    "price": 153,
+    "volume": 5
+},
+{
+    "id": "id2.18",
+    "group": "group C",
+    "price": 311,
+    "volume": 7
+},
+{
+    "id": "id2.19",
+    "group": "group B",
+    "price": 359,
+    "volume": 12
+},
+{
+    "id": "id2.20",
+    "group": "group B",
+    "price": 468,
+    "volume": 16
+},
+{
+    "id": "id2.21",
+    "group": "group A",
+    "price": 160,
+    "volume": 12
+},
+{
+    "id": "id2.22",
+    "group": "group C",
+    "price": 446,
+    "volume": 9
+},
+{
+    "id": "id2.23",
+    "group": "group A",
+    "price": 109,
+    "volume": 15
+},
+{
+    "id": "id2.24",
+    "group": "group B",
+    "price": 208,
+    "volume": 12
+},
+{
+    "id": "id2.25",
+    "group": "group B",
+    "price": 317,
+    "volume": 13
+},
+{
+    "id": "id2.26",
+    "group": "group C",
+    "price": 248,
+    "volume": 9
+},
+{
+    "id": "id2.27",
+    "group": "group A",
+    "price": 53,
+    "volume": 20
+},
+{
+    "id": "id2.28",
+    "group": "group B",
+    "price": 150,
+    "volume": 20
+},
+{
+    "id": "id2.29",
+    "group": "group A",
+    "price": 409,
+    "volume": 13
+},
+{
+    "id": "id2.30",
+    "group": "group C",
+    "price": 54,
+    "volume": 5
+},
+{
+    "id": "id2.31",
+    "group": "group B",
+    "price": 208,
+    "volume": 15
+},
+{
+    "id": "id2.32",
+    "group": "group C",
+    "price": 63,
+    "volume": 5
+},
+{
+    "id": "id2.33",
+    "group": "group B",
+    "price": 476,
+    "volume": 5
+},
+{
+    "id": "id2.34",
+    "group": "group B",
+    "price": 479,
+    "volume": 5
+},
+{
+    "id": "id2.35",
+    "group": "group C",
+    "price": 172,
+    "volume": 6
+},
+{
+    "id": "id2.36",
+    "group": "group B",
+    "price": 27,
+    "volume": 9
+},
+{
+    "id": "id2.37",
+    "group": "group C",
+    "price": 413,
+    "volume": 15
+},
+{
+    "id": "id2.38",
+    "group": "group A",
+    "price": 231,
+    "volume": 20
+},
+{
+    "id": "id2.39",
+    "group": "group C",
+    "price": 240,
+    "volume": 10
+},
+{
+    "id": "id2.40",
+    "group": "group B",
+    "price": 442,
+    "volume": 10
+},
+{
+    "id": "id2.41",
+    "group": "group C",
+    "price": 251,
+    "volume": 7
+},
+{
+    "id": "id2.42",
+    "group": "group A",
+    "price": 405,
+    "volume": 4
+},
+{
+    "id": "id2.43",
+    "group": "group A",
+    "price": 160,
+    "volume": 10
+},
+{
+    "id": "id2.44",
+    "group": "group B",
+    "price": 354,
+    "volume": 10
+},
+{
+    "id": "id2.45",
+    "group": "group B",
+    "price": 285,
+    "volume": 5
+},
+{
+    "id": "id2.46",
+    "group": "group C",
+    "price": 192,
+    "volume": 11
+},
+{
+    "id": "id2.47",
+    "group": "group B",
+    "price": 484,
+    "volume": 4
     },
     {
-        "year": "AE",
-        "hot dog": 181,
-        "hot dogColor": "hsl(254, 70%, 50%)",
-        "burger": 84,
-        "burgerColor": "hsl(330, 70%, 50%)",
-        "sandwich": 29,
-        "sandwichColor": "hsl(248, 70%, 50%)",
-        "kebab": 136,
-        "kebabColor": "hsl(146, 70%, 50%)",
-        "fries": 27,
-        "friesColor": "hsl(254, 70%, 50%)",
-        "donut": 145,
-        "donutColor": "hsl(128, 70%, 50%)"
+    "id": "id2.48",
+    "group": "group B",
+    "price": 77,
+    "volume": 10
     },
     {
-        "year": "AF",
-        "hot dog": 147,
-        "hot dogColor": "hsl(255, 70%, 50%)",
-        "burger": 70,
-        "burgerColor": "hsl(149, 70%, 50%)",
-        "sandwich": 63,
-        "sandwichColor": "hsl(6, 70%, 50%)",
-        "kebab": 67,
-        "kebabColor": "hsl(112, 70%, 50%)",
-        "fries": 195,
-        "friesColor": "hsl(185, 70%, 50%)",
-        "donut": 86,
-        "donutColor": "hsl(251, 70%, 50%)"
+    "id": "id2.49",
+    "group": "group B",
+    "price": 7,
+    "volume": 20
     },
     {
-        "year": "AG",
-        "hot dog": 23,
-        "hot dogColor": "hsl(44, 70%, 50%)",
-        "burger": 118,
-        "burgerColor": "hsl(282, 70%, 50%)",
-        "sandwich": 68,
-        "sandwichColor": "hsl(261, 70%, 50%)",
-        "kebab": 52,
-        "kebabColor": "hsl(192, 70%, 50%)",
-        "fries": 161,
-        "friesColor": "hsl(150, 70%, 50%)",
-        "donut": 85,
-        "donutColor": "hsl(280, 70%, 50%)"
+    "id": "id2.50",
+    "group": "group B",
+    "price": 200,
+    "volume": 16
     },
     {
-        "year": "AI",
-        "hot dog": 47,
-        "hot dogColor": "hsl(242, 70%, 50%)",
-        "burger": 15,
-        "burgerColor": "hsl(114, 70%, 50%)",
-        "sandwich": 150,
-        "sandwichColor": "hsl(276, 70%, 50%)",
-        "kebab": 64,
-        "kebabColor": "hsl(265, 70%, 50%)",
-        "fries": 108,
-        "friesColor": "hsl(94, 70%, 50%)",
-        "donut": 14,
-        "donutColor": "hsl(14, 70%, 50%)"
+    "id": "id2.51",
+    "group": "group C",
+    "price": 67,
+    "volume": 13
     },
     {
-        "year": "AL",
-        "hot dog": 48,
-        "hot dogColor": "hsl(276, 70%, 50%)",
-        "burger": 39,
-        "burgerColor": "hsl(243, 70%, 50%)",
-        "sandwich": 104,
-        "sandwichColor": "hsl(339, 70%, 50%)",
-        "kebab": 70,
-        "kebabColor": "hsl(171, 70%, 50%)",
-        "fries": 93,
-        "friesColor": "hsl(351, 70%, 50%)",
-        "donut": 180,
-        "donutColor": "hsl(55, 70%, 50%)"
+    "id": "id2.52",
+    "group": "group C",
+    "price": 12,
+    "volume": 4
     },
     {
-        "year": "AM",
-        "hot dog": 79,
-        "hot dogColor": "hsl(14, 70%, 50%)",
-        "burger": 19,
-        "burgerColor": "hsl(280, 70%, 50%)",
-        "sandwich": 45,
-        "sandwichColor": "hsl(325, 70%, 50%)",
-        "kebab": 159,
-        "kebabColor": "hsl(172, 70%, 50%)",
-        "fries": 121,
-        "friesColor": "hsl(262, 70%, 50%)",
-        "donut": 14,
-        "donutColor": "hsl(133, 70%, 50%)"
+    "id": "id2.53",
+    "group": "group C",
+    "price": 6,
+    "volume": 10
     }
 ]

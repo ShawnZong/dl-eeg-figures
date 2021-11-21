@@ -1,7 +1,7 @@
 // install (please make sure versions match peerDependencies)
 // yarn add @nivo/core @nivo/bar
 import { ResponsiveBar } from "@nivo/bar";
-
+import { generateRandomInt } from "../utils";
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
 // no chart will be rendered.
@@ -10,9 +10,7 @@ import { ResponsiveBar } from "@nivo/bar";
 
 const MyResponsiveBar = () => {
   let data = [];
-  function generateRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
+
   for (let i = 2010; i < 2019; i++) {
     data.push({
       year: i,

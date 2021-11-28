@@ -4,6 +4,8 @@ import { render } from "react-dom";
 import { MyResponsiveBar } from "./components/Bar";
 import { MyResponsivePie } from "./components/PieChart";
 import { MyResponsiveSwarmPlot } from "./components/SwarmPlot";
+import { MyResponsiveChoropleth } from "./components/Chroropleth";
+
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center",
@@ -16,6 +18,7 @@ const App = () => (
     <MyResponsiveBar />
     <MyResponsivePie />
     <MyResponsiveSwarmPlot />
+    <MyResponsiveChoropleth />
   </div>
 );
 

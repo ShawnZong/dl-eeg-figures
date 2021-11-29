@@ -41,7 +41,7 @@ const MyResponsivePie = () => {
     <ResponsivePie
       data={data}
       margin={{ top: 40, right: 150, bottom: 80, left: 80 }}
-      width="500"
+      width="800"
       height="500"
       innerRadius={0.5}
       padAngle={0.7}

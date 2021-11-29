@@ -13,6 +13,7 @@ const styles = {
   height: 500,
 };
 
+
 const App = () => (
   <div style={styles}>
     <ToPrintComponent styles={styles} tobePrinted={<MyResponsiveBar />} />

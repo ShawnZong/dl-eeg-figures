@@ -18,13 +18,32 @@ const styles = {
   height: 500,
 };
 const ComponentToPrint = React.forwardRef((props, ref) => (
-  <React.Fragment ref={ref}>
+  <div style={styles} ref={ref}>
     <MyResponsiveBar />
-  </React.Fragment>
+  </div>
 ));
+const MyComponent = () => {
+  const componentRef = useRef();
+
+  return (
+    <React.Fragment>
+      <ComponentToPrint ref={componentRef} />
+      <button onClick={() => exportComponentAsJPEG(componentRef)}>
+        Export As JPEG
+      </button>
+      <button onClick={() => exportComponentAsPDF(componentRef)}>
+        Export As PDF
+      </button>
+      <button onClick={() => exportComponentAsPNG(componentRef)}>
+        Export As PNG
+      </button>
+    </React.Fragment>
+  );
+};
+
 const App = () => (
   <div style={styles}>
-    <ComponentToPrint />
+    <MyComponent />
   </div>
 );
 // const App = () => (

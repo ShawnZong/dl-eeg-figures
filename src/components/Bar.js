@@ -7,6 +7,12 @@ import { generateRandomInt } from "../utils";
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
+import {
+  exportComponentAsJPEG,
+  exportComponentAsPDF,
+  exportComponentAsPNG,
+} from "react-component-export-image";
+import React, { useRef } from "react";
 
 const MyResponsiveBar = () => {
   let data = [];
@@ -141,5 +147,27 @@ const MyResponsiveBar = () => {
     />
   );
 };
+const ComponentToPrint = React.forwardRef((props, ref) => (
+  <div style={props.styles} ref={ref}>
+    <MyResponsiveBar />
+  </div>
+));
+const ToPrintResponsiveBar = ({ styles }) => {
+  const componentRef = useRef();
 
-export { MyResponsiveBar };
+  return (
+    <div>
+      <ComponentToPrint ref={componentRef} styles={styles} />
+      <button onClick={() => exportComponentAsJPEG(componentRef)}>
+        Export As JPEG
+      </button>
+      <button onClick={() => exportComponentAsPDF(componentRef)}>
+        Export As PDF
+      </button>
+      <button onClick={() => exportComponentAsPNG(componentRef)}>
+        Export As PNG
+      </button>
+    </div>
+  );
+};
+export { MyResponsiveBar, ToPrintResponsiveBar };

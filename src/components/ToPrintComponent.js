@@ -22,7 +22,7 @@ const ToPrintComponent = ({ styles, tobePrinted }) => {
       <button
         onClick={() =>
           exportComponentAsJPEG(componentRef, {
-            html2CanvasOptions: { backgroundColor: null },
+            html2CanvasOptions: { scale: 6 },
           })
         }
       >
@@ -31,7 +31,7 @@ const ToPrintComponent = ({ styles, tobePrinted }) => {
       <button
         onClick={() =>
           exportComponentAsPDF(componentRef, {
-            html2CanvasOptions: { backgroundColor: null },
+            html2CanvasOptions: { scale: 5 },
           })
         }
       >
@@ -40,7 +40,7 @@ const ToPrintComponent = ({ styles, tobePrinted }) => {
       <button
         onClick={() =>
           exportComponentAsPNG(componentRef, {
-            html2CanvasOptions: { backgroundColor: null },
+            html2CanvasOptions: { scale: 5 },
           })
         }
       >

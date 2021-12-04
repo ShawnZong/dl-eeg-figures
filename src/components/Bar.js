@@ -51,7 +51,7 @@ const MyResponsiveBar = ({ theme }) => {
       width="900"
       height="500"
       indexBy="year"
-      margin={{ top: 50, right: 230, bottom: 80, left: 60 }}
+      margin={{ top: 30, right: 230, bottom: 80, left: 60 }}
       padding={0.3}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
@@ -124,4 +124,5 @@ const BarWithDropdown = ({ styles }) => {
     </div>
   );
 };
+
 export { MyResponsiveBar, BarWithDropdown };

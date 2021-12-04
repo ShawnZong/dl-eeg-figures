@@ -1,6 +1,6 @@
 import Dropdown from "react-bootstrap/Dropdown";
 
-const colorSchemeIds = [
+const defaultColorSchemeIds = [
   "nivo",
   // categorical
   "category10",
@@ -43,29 +43,32 @@ const colorSchemeIds = [
   "yellow_orange_brown",
   "yellow_orange_red",
 ];
-const options = colorSchemeIds.map((schemeId) => ({
-  value: schemeId,
-  label: schemeId,
-}));
 
-const MyDropDown = ({ setTheme }) => (
-  <Dropdown>
-    <Dropdown.Toggle variant="success" id="dropdown-basic">
-      Select A Theme
-    </Dropdown.Toggle>
+const MyDropDown = ({ setTheme, colorSchemeIds = defaultColorSchemeIds }) => {
+  const options = colorSchemeIds.map((schemeId) => ({
+    value: schemeId,
+    label: schemeId,
+  }));
 
-    <Dropdown.Menu style={{ height: "200px", overflowY: "scroll" }}>
-      {options.map((option, i) => (
-        <Dropdown.Item
-          onClick={() => setTheme(option.value)}
-          value={option.value}
-          key={i}
-        >
-          {option.label}
-        </Dropdown.Item>
-      ))}
-    </Dropdown.Menu>
-  </Dropdown>
-);
+  return (
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Select A Theme
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu style={{ height: "200px", overflowY: "scroll" }}>
+        {options.map((option, i) => (
+          <Dropdown.Item
+            onClick={() => setTheme(option.value)}
+            value={option.value}
+            key={i}
+          >
+            {option.label}
+          </Dropdown.Item>
+        ))}
+      </Dropdown.Menu>
+    </Dropdown>
+  );
+};
 
 export { MyDropDown };

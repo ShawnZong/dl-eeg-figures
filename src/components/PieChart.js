@@ -7,6 +7,10 @@ import { generateRandomInt } from "../utils";
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
+import { useState } from "react";
+import { ToPrintComponent } from "./ToPrintComponent";
+import { MyDropDown } from "./Dropdown";
+
 const label = [
   "CNN",
   "GAN",
@@ -36,9 +40,10 @@ data = data.map((eachClass) => {
   return eachClass;
 });
 
-const MyResponsivePie = () => {
+const MyResponsivePie = ({ theme }) => {
   return (
     <ResponsivePie
+      colors={{ scheme: theme }}
       data={data}
       margin={{ top: 40, right: 150, bottom: 80, left: 80 }}
       width="800"
@@ -56,76 +61,6 @@ const MyResponsivePie = () => {
       arcLabel={(item) => `${item.value}%`}
       arcLabelsSkipAngle={10}
       arcLabelsTextColor={{ from: "color", modifiers: [["darker", 2]] }}
-      defs={[
-        {
-          id: "dots",
-          type: "patternDots",
-          background: "inherit",
-          color: "rgba(255, 255, 255, 0.3)",
-          size: 4,
-          padding: 1,
-          stagger: true,
-        },
-        {
-          id: "lines",
-          type: "patternLines",
-          background: "inherit",
-          color: "rgba(255, 255, 255, 0.3)",
-          rotation: -45,
-          lineWidth: 6,
-          spacing: 10,
-        },
-      ]}
-      fill={[
-        {
-          match: {
-            id: "RNN",
-          },
-          id: "dots",
-        },
-        {
-          match: {
-            id: "CNN",
-          },
-          id: "dots",
-        },
-        {
-          match: {
-            id: "GAN",
-          },
-          id: "dots",
-        },
-        {
-          match: {
-            id: "Other",
-          },
-          id: "dots",
-        },
-        {
-          match: {
-            id: "FC",
-          },
-          id: "lines",
-        },
-        {
-          match: {
-            id: "DBN",
-          },
-          id: "lines",
-        },
-        {
-          match: {
-            id: "N/M",
-          },
-          id: "lines",
-        },
-        {
-          match: {
-            id: "RBM",
-          },
-          id: "lines",
-        },
-      ]}
       legends={[
         {
           anchor: "bottom",
@@ -155,4 +90,17 @@ const MyResponsivePie = () => {
   );
 };
 
-export { MyResponsivePie };
+const PieWithDropdown = ({ styles }) => {
+  const [theme, setTheme] = useState("nivo");
+
+  return (
+    <div>
+      <MyDropDown setTheme={setTheme} />
+      <ToPrintComponent
+        styles={styles}
+        tobePrinted={<MyResponsivePie theme={theme} />}
+      />
+    </div>
+  );
+};
+export { MyResponsivePie, PieWithDropdown };

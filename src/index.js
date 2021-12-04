@@ -1,11 +1,10 @@
 import React from "react";
 import { render } from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { MyResponsiveBar, BarWithDropdown } from "./components/Bar";
-import { MyResponsivePie } from "./components/PieChart";
-import { MyResponsiveSwarmPlot } from "./components/SwarmPlot";
-import { MyResponsiveChoropleth } from "./components/Chroropleth";
-import { ToPrintComponent } from "./components/ToPrintComponent";
+import { BarWithDropdown } from "./components/Bar";
+import { PieWithDropdown } from "./components/PieChart";
+import { SwarmPlotWithDropdown } from "./components/SwarmPlot";
+import { ChoroplethWithDropdown } from "./components/Chroropleth";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -13,21 +12,13 @@ const styles = {
   width: 1000,
   height: 500,
 };
-const test = { display: "inline-block", width: "10px", height: "10px" };
-const blockBackground = {
-  background: "rgb(178, 24, 43)",
-};
+
 const App = () => (
   <div style={styles}>
-    color <div style={{ background: "rgb(178, 24, 43)", ...test }} />
     <BarWithDropdown styles={styles} />
-    {/* <ToPrintComponent styles={styles} tobePrinted={<MyResponsiveBar />} /> */}
-    {/* <ToPrintComponent styles={styles} tobePrinted={<MyResponsivePie />} />
-    <ToPrintComponent styles={styles} tobePrinted={<MyResponsiveSwarmPlot />} />
-    <ToPrintComponent
-      styles={styles}
-      tobePrinted={<MyResponsiveChoropleth />}
-    />  */}
+    <ChoroplethWithDropdown styles={styles} />
+    <SwarmPlotWithDropdown styles={styles} />
+    <PieWithDropdown styles={styles} />
   </div>
 );
 

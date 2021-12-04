@@ -8,6 +8,9 @@ import { generateRandomInt } from "../utils";
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
+import { useState } from "react";
+import { ToPrintComponent } from "./ToPrintComponent";
+import { MyDropDown } from "./Dropdown";
 
 const groups = [
   "Cognitive",
@@ -30,9 +33,10 @@ for (let i = 0; i < 200; i++) {
   });
 }
 
-const MyResponsiveSwarmPlot = () => {
+const MyResponsiveSwarmPlot = ({ theme }) => {
   return (
     <ResponsiveSwarmPlot
+      colors={{ scheme: theme }}
       width="1000"
       height="500"
       data={data}
@@ -52,7 +56,7 @@ const MyResponsiveSwarmPlot = () => {
           ["opacity", 0.5],
         ],
       }}
-      margin={{ top: 80, right: 100, bottom: 80, left: 200 }}
+      margin={{ top: 5, right: 100, bottom: 80, left: 200 }}
       axisTop={null}
       axisRight={null}
       axisBottom={{
@@ -69,4 +73,18 @@ const MyResponsiveSwarmPlot = () => {
   );
 };
 
-export { MyResponsiveSwarmPlot };
+const SwarmPlotWithDropdown = ({ styles }) => {
+  const [theme, setTheme] = useState("nivo");
+
+  return (
+    <div>
+      <MyDropDown setTheme={setTheme} />
+      <ToPrintComponent
+        styles={styles}
+        tobePrinted={<MyResponsiveSwarmPlot theme={theme} />}
+      />
+    </div>
+  );
+};
+
+export { MyResponsiveSwarmPlot, SwarmPlotWithDropdown };

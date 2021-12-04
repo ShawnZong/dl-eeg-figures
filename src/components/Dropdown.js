@@ -110,7 +110,7 @@ const MyDropDown = ({ setTheme, colorSchemeIds = colorSchemes }) => {
     );
   });
   return (
-    <Dropdown>
+    <Dropdown style={{ marginTop: "10px", marginBottom: "10px" }}>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
         Select A Theme
       </Dropdown.Toggle>

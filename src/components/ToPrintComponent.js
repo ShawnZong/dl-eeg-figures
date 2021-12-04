@@ -16,7 +16,7 @@ const ToPrintComponent = ({ styles, tobePrinted }) => {
     <div>
       <ComponentToPrint
         ref={componentRef}
-        styles={styles}
+        styles={{ ...styles, marginBottom: "10px", marginTop: "10px" }}
         tobePrinted={tobePrinted}
       />
       <button

@@ -7,10 +7,13 @@ import { generateRandomInt } from "../utils";
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-
-const MyResponsiveBar = () => {
+import { useState } from "react";
+import { ToPrintComponent } from "./ToPrintComponent";
+import Dropdown from "react-bootstrap/Dropdown";
+const MyResponsiveBar = ({ theme }) => {
   let data = [];
 
+  console.log("theem::", theme);
   for (let i = 2010; i < 2019; i++) {
     data.push({
       year: i,
@@ -48,11 +51,11 @@ const MyResponsiveBar = () => {
       width="900"
       height="500"
       indexBy="year"
-      margin={{ top: 50, right: 230, bottom: 50, left: 60 }}
+      margin={{ top: 50, right: 230, bottom: 80, left: 60 }}
       padding={0.3}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
-      colors={{ scheme: "nivo" }}
+      colors={{ scheme: theme }}
       defs={[
         {
           id: "dots",
@@ -142,4 +145,82 @@ const MyResponsiveBar = () => {
   );
 };
 
-export { MyResponsiveBar };
+const colorSchemeIds = [
+  "nivo",
+  // categorical
+  "category10",
+  "accent",
+  "dark2",
+  "paired",
+  "pastel1",
+  "pastel2",
+  "set1",
+  "set2",
+  "set3",
+  // diverging
+  "brown_blueGreen",
+  "purpleRed_green",
+  "pink_yellowGreen",
+  "purple_orange",
+  "red_blue",
+  "red_grey",
+  "red_yellow_blue",
+  "red_yellow_green",
+  "spectral",
+  // sequential single hue
+  "blues",
+  "greens",
+  "greys",
+  "oranges",
+  "purples",
+  "reds",
+  // sequential multi hue
+  "blue_green",
+  "blue_purple",
+  "green_blue",
+  "orange_red",
+  "purple_blue_green",
+  "purple_blue",
+  "purple_red",
+  "red_purple",
+  "yellow_green_blue",
+  "yellow_green",
+  "yellow_orange_brown",
+  "yellow_orange_red",
+];
+const options = colorSchemeIds.map((schemeId) => ({
+  value: schemeId,
+  label: schemeId,
+}));
+
+console.log(options);
+const BarWithDropdown = ({ styles }) => {
+  const [theme, setTheme] = useState("nivo");
+  console.log("aaa", theme);
+  return (
+    <div>
+      <Dropdown>
+        <Dropdown.Toggle variant="success" id="dropdown-basic">
+          Select A Theme
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu style={{ height: "70px", "overflow-y": "scroll" }}>
+          {options.map((option, i) => (
+            <Dropdown.Item
+              onClick={() => setTheme(option.value)}
+              value={option.value}
+              key={i}
+            >
+              {option.label}
+            </Dropdown.Item>
+          ))}
+        </Dropdown.Menu>
+      </Dropdown>
+      <ToPrintComponent
+        styles={styles}
+        tobePrinted={<MyResponsiveBar theme={theme} />}
+      />
+    </div>
+  );
+};
+export { MyResponsiveBar, BarWithDropdown };

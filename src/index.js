@@ -15,10 +15,10 @@ const styles = {
 
 const App = () => (
   <div style={styles}>
-    {/* <BarWithDropdown styles={styles} /> */}
+    <BarWithDropdown styles={styles} />
     <ChoroplethWithDropdown styles={styles} />
-    {/* <SwarmPlotWithDropdown styles={styles} />
-    <PieWithDropdown styles={styles} /> */}
+    <SwarmPlotWithDropdown styles={styles} />
+    <PieWithDropdown styles={styles} />
   </div>
 );
 

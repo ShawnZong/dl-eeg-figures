@@ -10,7 +10,78 @@ import { generateRandomInt } from "../utils";
 import { MyDropDown } from "./Dropdown";
 import { ToPrintComponent } from "./ToPrintComponent";
 import { useState } from "react";
+import last from "lodash/last";
+import {
+  // Diverging
+  schemeBrBG,
+  schemePRGn,
+  schemePiYG,
+  schemePuOr,
+  schemeRdBu,
+  schemeRdGy,
+  schemeRdYlBu,
+  schemeRdYlGn,
+  schemeSpectral,
 
+  // Sequential (Single Hue)
+  schemeBlues,
+  schemeGreens,
+  schemeGreys,
+  schemeOranges,
+  schemePurples,
+  schemeReds,
+
+  // Sequential (Multi-Hue)
+  schemeBuGn,
+  schemeBuPu,
+  schemeGnBu,
+  schemeOrRd,
+  schemePuBuGn,
+  schemePuBu,
+  schemePuRd,
+  schemeRdPu,
+  schemeYlGnBu,
+  schemeYlGn,
+  schemeYlOrBr,
+  schemeYlOrRd,
+} from "d3-scale-chromatic";
+
+const quantizeColorScales = {
+  nivo: ["#d76445", "#f47560", "#e8c1a0", "#97e3d5", "#61cdbb", "#00b0a7"],
+
+  // Diverging
+  BrBG: last(schemeBrBG),
+  PRGn: last(schemePRGn),
+  PiYG: last(schemePiYG),
+  PuOr: last(schemePuOr),
+  RdBu: last(schemeRdBu),
+  RdGy: last(schemeRdGy),
+  RdYlBu: last(schemeRdYlBu),
+  RdYlGn: last(schemeRdYlGn),
+  spectral: last(schemeSpectral),
+
+  // Sequential (Single Hue)
+  blues: last(schemeBlues),
+  greens: last(schemeGreens),
+  greys: last(schemeGreys),
+  oranges: last(schemeOranges),
+  purples: last(schemePurples),
+  reds: last(schemeReds),
+
+  // Sequential (Multi-Hue)
+  BuGn: last(schemeBuGn),
+  BuPu: last(schemeBuPu),
+  GnBu: last(schemeGnBu),
+  OrRd: last(schemeOrRd),
+  PuBuGn: last(schemePuBuGn),
+  PuBu: last(schemePuBu),
+  PuRd: last(schemePuRd),
+  RdPu: last(schemeRdPu),
+  YlGnBu: last(schemeYlGnBu),
+  YlGn: last(schemeYlGn),
+  YlOrBr: last(schemeYlOrBr),
+  YlOrRd: last(schemeYlOrRd),
+};
 const world_countries = require("../data/world_countries.json");
 const data = world_countries.features.map((country) => {
   return { id: country.id, value: generateRandomInt(30) };
@@ -57,49 +128,13 @@ const MyResponsiveChoropleth = ({ theme }) => (
     ]}
   />
 );
-const colorSchemeIds = [
-  "nivo",
-
-  // Diverging
-  "BrBG",
-  "PRGn",
-  "PiYG",
-  "PuOr",
-  "RdBu",
-  "RdGy",
-  "RdYlBu",
-  "RdYlGn",
-  "spectral",
-
-  // Sequential (Single Hue)
-  "blues",
-  "greens",
-  "greys",
-  "oranges",
-  "purples",
-  "reds",
-
-  // Sequential (Multi-Hue)
-  "BuGn",
-  "BuPu",
-  "GnBu",
-  "OrRd",
-  "PuBuGn",
-  "PuBu",
-  "PuRd",
-  "RdPu",
-  "YlGnBu",
-  "YlGn",
-  "YlOrBr",
-  "YlOrRd",
-];
 
 const ChoroplethWithDropdown = ({ styles }) => {
   const [theme, setTheme] = useState("nivo");
 
   return (
     <div>
-      <MyDropDown setTheme={setTheme} colorSchemeIds={colorSchemeIds} />
+      <MyDropDown setTheme={setTheme} colorSchemeIds={quantizeColorScales} />
       <ToPrintComponent
         styles={styles}
         tobePrinted={<MyResponsiveChoropleth theme={theme} />}

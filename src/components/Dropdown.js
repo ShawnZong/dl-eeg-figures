@@ -45,11 +45,26 @@ const defaultColorSchemeIds = [
 ];
 
 const MyDropDown = ({ setTheme, colorSchemeIds = defaultColorSchemeIds }) => {
-  const options = colorSchemeIds.map((schemeId) => ({
-    value: schemeId,
-    label: schemeId,
-  }));
-
+  let items = [];
+  const boxStyle = {
+    display: "inline-block",
+    width: "10px",
+    height: "10px",
+  };
+  Object.entries(colorSchemeIds).forEach(([colorIndex, colorValue]) => {
+    items.push(
+      <Dropdown.Item
+        onClick={() => setTheme(colorIndex)}
+        value={colorIndex}
+        key={colorIndex}
+      >
+        {colorIndex}{" "}
+        {colorValue.map((v, i) => {
+          return <div key={i} style={{ ...boxStyle, background: `${v}` }} />;
+        })}
+      </Dropdown.Item>
+    );
+  });
   return (
     <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -57,15 +72,7 @@ const MyDropDown = ({ setTheme, colorSchemeIds = defaultColorSchemeIds }) => {
       </Dropdown.Toggle>
 
       <Dropdown.Menu style={{ height: "200px", overflowY: "scroll" }}>
-        {options.map((option, i) => (
-          <Dropdown.Item
-            onClick={() => setTheme(option.value)}
-            value={option.value}
-            key={i}
-          >
-            {option.label}
-          </Dropdown.Item>
-        ))}
+        {items}
       </Dropdown.Menu>
     </Dropdown>
   );
